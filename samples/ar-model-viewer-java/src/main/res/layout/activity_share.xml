@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/sharecontainer"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bottom_dialog"
+    tools:context=".ShareActivity"
+    android:padding="@dimen/_20sdp">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="@dimen/_90sdp"
+        android:layout_height="@dimen/_150sdp"
+        android:scaleType="fitXY"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <Button
+        android:id="@+id/buttonSave1"
+        android:layout_width="match_parent"
+        android:text="Save to device"
+        android:textColor="#FFFFFF"
+        android:textSize="@dimen/_12ssp"
+        android:layout_height="@dimen/_36sdp"
+        android:background="@drawable/buttonshape"
+        android:layout_marginTop="@dimen/_8sdp"
+        app:layout_constraintTop_toBottomOf="@id/imageView"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <Button
+        android:id="@+id/buttonSave2"
+        android:layout_width="match_parent"
+        android:text="Save to collection"
+        android:textColor="#FFFFFF"
+        android:textSize="@dimen/_12ssp"
+        android:layout_height="@dimen/_36sdp"
+        android:background="@drawable/buttonshape"
+        android:layout_marginTop="@dimen/_8sdp"
+        app:layout_constraintTop_toBottomOf="@id/buttonSave1"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <Button
+        android:id="@+id/buttonShare"
+        android:layout_width="match_parent"
+        android:text="Share with facebook"
+        android:textColor="#FFFFFF"
+        android:textSize="@dimen/_12ssp"
+        android:layout_height="@dimen/_36sdp"
+        android:background="@drawable/buttonshape"
+        android:layout_marginTop="@dimen/_8sdp"
+        app:layout_constraintTop_toBottomOf="@id/buttonSave2"
+        app:layout_constraintStart_toStartOf="parent"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

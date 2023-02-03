@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "354020145794",
+    "firebase_url": "https://arapp2-e48e1-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "arapp2-e48e1",
+    "storage_bucket": "arapp2-e48e1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:354020145794:android:57ba0c750fcee6b6a3d29b",
+        "android_client_info": {
+          "package_name": "com.google.ar.sceneform.samples.gltf"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "354020145794-o0ruu54p4s8m2pr2aq211t7p5vfcj4ud.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBug8L61iI0lTDMIoN4jt2MeH6wDAg_mhc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "354020145794-o0ruu54p4s8m2pr2aq211t7p5vfcj4ud.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

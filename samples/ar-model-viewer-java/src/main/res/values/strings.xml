@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name" translation_description="App Name [CHAR LIMIT=40]">AR Furniture</string>
+    <string name="facebook_app_id">5852391044772958</string>
+    <string name="facebook_client_token">88054446269883e27c8fe512d48ed936</string>
+</resources>

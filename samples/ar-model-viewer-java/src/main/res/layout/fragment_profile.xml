@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".profile">
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+               <androidx.constraintlayout.widget.ConstraintLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="@dimen/_150sdp"
+                 >
+                   <ImageView
+                       android:id="@+id/cover"
+                       android:layout_width="match_parent"
+                       android:layout_height="match_parent"
+                       app:layout_constraintBottom_toBottomOf="parent"
+                       app:layout_constraintEnd_toEndOf="parent"
+                       app:layout_constraintHorizontal_bias="0.0"
+                       android:src="@drawable/favorite_img_1"
+                       android:scaleType="centerCrop"
+                       android:translationZ="-90dp"
+                       app:layout_constraintStart_toStartOf="parent"
+                       app:layout_constraintTop_toTopOf="parent" />
+
+
+                <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/profile_image"
+                    android:layout_width="@dimen/_70sdp"
+                    android:layout_height="@dimen/_70sdp"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintBottom_toBottomOf="@id/name"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginBottom="@dimen/_24sdp"
+                    android:src="@drawable/favorite_img_4" />
+
+                <TextView
+                    android:id="@+id/name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintBottom_toBottomOf="@id/phone"
+                    android:layout_marginBottom="@dimen/_16sdp"
+                    android:text="Son Nguyen"
+                    android:textColor="#FFFFFF"
+                    android:textSize="@dimen/_15ssp" />
+
+                <TextView
+                    android:id="@+id/phone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    android:text="+84123456789"
+                    android:textColor="#FFFFFF"
+                    android:layout_marginBottom="@dimen/_8sdp"
+                    android:textSize="@dimen/_12ssp" />
+
+                   <ImageView
+                       android:id="@+id/exit"
+                       android:layout_width="@dimen/_25sdp"
+                       android:layout_height="@dimen/_25sdp"
+                       app:layout_constraintRight_toRightOf="parent"
+                       app:layout_constraintBottom_toBottomOf="parent"
+                       android:layout_margin="@dimen/_8sdp"
+                       android:src="@drawable/ic_baseline_exit_to_app_24"/>
+
+
+               </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:background="#f4f4f4"
+                    android:orientation="horizontal"
+                    android:paddingLeft="16dp"
+                    android:paddingTop="16dp"
+                    android:paddingRight="16dp"
+                    android:weightSum="100">
+
+                    <LinearLayout
+                        android:id="@+id/cl"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="50"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/txtcl"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+
+                            android:text="Collection"
+                            android:textColor="#000000"
+                            android:textSize="14sp" />
+
+                        <View
+                            android:id="@+id/slide1"
+                            android:layout_width="84dp"
+                            android:layout_height="2dp"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="8dp"
+                            android:background="@color/colorPrimaryDark" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/infor"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="50"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/txtinfor"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+
+                            android:text="Information"
+                            android:textColor="#b3b3b3"
+                            android:textSize="14sp" />
+
+                        <View
+                            android:id="@+id/slide2"
+                            android:layout_width="84dp"
+                            android:layout_height="2dp"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="8dp"
+                            android:background="@color/colorPrimaryDark"
+                            android:visibility="invisible" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/lycl"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="24dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginRight="24dp"
+                    android:orientation="horizontal"
+                    android:weightSum="100">
+
+                   <androidx.recyclerview.widget.RecyclerView
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:id="@+id/recycler_view_collection"
+                       app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+                       app:spanCount="3"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/lyinfor"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="24dp"
+                    android:layout_marginTop="16dp"
+                    android:visibility="gone"
+                    android:layout_marginRight="24dp"
+                    android:orientation="vertical"
+                    android:weightSum="100">
+
+                  <EditText
+                      android:id="@+id/edtname"
+                      android:layout_width="match_parent"
+                      android:layout_height="@dimen/_40sdp"
+                      android:paddingLeft="@dimen/_5sdp"
+                      android:layout_marginTop="16dp"
+                      android:background="@drawable/shape_button2"
+                      android:layout_marginBottom="16dp"
+                      android:layout_gravity="center"
+                      android:textColor="#000000"
+                      android:textColorHint="#b3b3b3"
+                      android:textSize="14sp" />
+
+                    <Button
+                        android:id="@+id/btnrename"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Rename"
+                        android:layout_gravity="center"
+                        android:textColor="#FFFFFF"
+                        android:background="@drawable/buttonshape"/>
+
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+
+
+        </ScrollView>
+
+    </RelativeLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
