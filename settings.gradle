@@ -1,0 +1,7 @@
+include ':core', ':ux', ':sceneform',
+        // Samples
+        ':sample-ar-model-viewer-java'
+
+
+// Dirs
+project(':sample-ar-model-viewer-java').projectDir = new File('samples/ar-model-viewer-java')

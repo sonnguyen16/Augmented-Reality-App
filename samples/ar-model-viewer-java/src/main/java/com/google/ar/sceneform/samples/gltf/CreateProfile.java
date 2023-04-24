@@ -106,7 +106,7 @@ public class CreateProfile extends AppCompatActivity {
 
     private void UploadAvatar() {
         if(realpath == ""){
-            avatarUri = Uri.parse("https://firebasestorage.googleapis.com/v0/b/arapp2-e48e1.appspot.com/o/Blank-Avatar.png?alt=media&token=882e7378-668d-48fe-9088-4e1e9b62a0d2");
+            avatarUri = Uri.parse("https://firebasestorage.googleapis.com/v0/b/arapp-3f31d.appspot.com/o/avatar%2Fimages.png?alt=media&token=a0a0f128-656a-4f32-af55-f969755e104e");
             CreateProfile();
         }else{
             Uri file = Uri.fromFile(new File(realpath));

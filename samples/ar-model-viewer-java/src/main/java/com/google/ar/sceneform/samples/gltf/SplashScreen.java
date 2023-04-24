@@ -54,8 +54,12 @@ public class SplashScreen extends AppCompatActivity {
 //         Lấy user hiện tại trên Firebase
         FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
 
+        Pair[] pair = new Pair[1];
+        pair[0] = new Pair<View, String>(imgLogo,"logo_trans");
+
         if(user == null){
             Intent intent = new Intent(SplashScreen.this, login.class);
+
             startActivity(intent);
             finish();
         }
